@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9a9a9"
+    android:orientation="horizontal"
+    android:weightSum="5" >
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5" >
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:background="#cdc9c9"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="History" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="357dp"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="5">
+
+            <Button
+                android:id="@+id/btn_clr"
+                android:layout_width="0dp"
+            	android:layout_height="fill_parent"
+            	android:layout_weight="5" 
+            	android:textSize="20dp"
+            	
+                android:text="Clear History"
+                android:onClick="delete" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+           		android:layout_height="fill_parent"
+            	android:layout_weight="5" 
+            	android:textSize="20dp"
+                android:text="Go Back"
+                android:onClick="goBack" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
